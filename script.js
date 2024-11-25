@@ -243,7 +243,7 @@ function selectionSort(array) {
             }
             cont++
         }
-        if (i != menor) {
+        if (i = menor) {
             let guard = array[i]
             array[i] = array[menor]
             array[menor] = guard
@@ -257,7 +257,7 @@ function insertSort(array) {
     for (let i = 0; i < array.length; i++) {
         let j = i - 1
         let guard = array[i]
-        while (j >= 0 && guard < array[JSON]) {
+        while (j >= 0 && guard < array[j]) {
             array[j + 1] = array[j]
             j--
         }
