@@ -1,0 +1,262 @@
+h3 {
+    /* Tira esse style porque é só pros comentários para você alterar */
+    color: red;
+    font-weight: bold;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #171810;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #171810;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 2px solid #03fa6e;
+}
+
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #171810;
+    height: fit-content;
+}
+
+header img {
+    height: 100px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    color: #03fa6e;
+}
+
+header nav a:hover {
+    font-weight: bold;
+    border-bottom: #03fa6e 2px solid;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+main section {
+    width: 80%;
+    margin: 20px 0;
+}
+
+main section img {
+    width: 30%;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.imagem-grande {
+    width: 90%;
+}
+
+main section img:hover {
+    border: #03fa6e 1px solid;
+}
+
+.div-especial {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 90%;
+}
+
+
+.div-especial div, .div-especial section {
+    margin: 0 10px;
+    flex: 1 1 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.div-especial img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: start;
+    color: #171810;
+}
+
+hr {
+    border: #03fa6e 1px solid;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.hr-especial {
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: start;
+    color: #171810;
+    margin-top: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+article {
+    padding: 10px 20px;
+    text-align: start;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 10px 0;
+    border-left: #03fa6e 5px solid;
+    transition: 0.5s;
+}
+
+article:hover {
+    box-shadow: 0 3px 10px #171810;
+    transform: translateY(-3px);
+}
+
+.laranja {
+    color: orange;
+}
+
+.roxo {
+    color: purple;
+}
+
+.verde {
+    color: #03fa6e;
+}
+
+ul {
+    margin-top: 10px;
+    text-align: start;
+}
+
+.center {
+    text-align: center;
+}
+
+iframe {
+    border: 2px #171810 dotted;
+    border-radius: 10px;
+}
+
+#redes {
+    margin-top: 10px;
+}
+
+#redes a {
+    border: 1px solid #03fa6e;
+    padding: 3px;
+    color: #03fa6e;
+}
+
+#redes a:hover {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #171810;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.quest {
+    display: none;
+}
+
+.programacao {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.programacao:hover {
+    box-shadow: 0 3px 5px gray;
+    transform: translateY(-3px);
+}
+
+button {
+    margin-top: 10px;
+    padding: 3px 5px;
+    border: 3px solid #03fa6e;
+    background-color: #03fa6e;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: #03fa6e;
+    background-color: transparent;
+    font-weight: bold;
+    box-shadow: 0 0 2px #03fa6e;
+}
+
+@media(width <= 947px) {
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 15px 50px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #redes a {
+        margin-top: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    main section img {
+        width: 100%;
+    }
+
+    .div-especial {
+        display: block;
+    }
+
+    .div-especial section, .div-especial div {
+        width: 100%;
+    }
+
+    code {
+        width: 100%;
+    }
+}

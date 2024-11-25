@@ -1,0 +1,137 @@
+h3 {
+    /* Tira esse style porque é só pros comentários para você alterar */
+    color: red;
+    font-weight: bold;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #171810;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 2px solid #03fa6e;
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #171810;
+    height: fit-content;
+    width: 100%;
+}
+
+header img {
+    height: 100px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    color: #03fa6e;
+}
+
+header nav a:hover {
+    font-weight: bold;
+    border-bottom: #03fa6e 2px solid;
+}
+
+main {
+    padding: 20px 100px;
+}
+h1 {
+    font-size: 2rem;
+    text-align: start;
+    color: #171810;
+}
+
+hr {
+    border: #03fa6e 1px solid;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: start;
+    color: #171810;
+    margin-top: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    margin-top: 10px;
+    text-align: start;
+}
+
+.center {
+    text-align: center;
+}
+
+iframe {
+    border: 2px #171810 dotted;
+    border-radius: 10px;
+}
+
+#redes {
+    margin-top: 10px;
+}
+
+#redes a {
+    border: 1px solid #03fa6e;
+    padding: 3px;
+    color: #03fa6e;
+    margin-top: 10px;
+    height: 40px;
+}
+
+#redes a:hover {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #171810;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+@media(width <= 947px) {
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 15px 50px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #redes a {
+        margin-top: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

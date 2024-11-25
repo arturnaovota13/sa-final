@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Eletroeletronica</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.svg" alt="">
+        <br>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="eletroeletronica.html">eletroeletronica</a>
+            <a href="redes.html">Redes</a>
+            <a href="bancoDados.html">Banco de Dados</a>
+            <a href="algoritmoFluxograma.html">Algoritmos e Fluxogramas</a>
+            <a href="programacao.html">Programação</a>
+        </nav>
+    </header>
+    <main>
+        <section id="resistores">
+            <h2>Resistores e Código de Cores</h2>
+            <p>Os resistores limitam a quantidade de corrente que flui através de um circuito. Cada resistor possui um valor de resistência medido em ohms (Ω), identificado pelo código de cores.</p>
+            <img src="resistor.png" alt="">
+            <p><strong>Código de Cores:</strong> Cada faixa de cor no resistor representa um número. Um resistor com
+                faixas marron, preto e vermelho indica um valor de 1kΩ.</p>
+        </section>
+        
+        <hr>
+        
+        <section id="diodo-led">
+            <h2>Diodo LED e Display de Sete Segmentos</h2>
+            <div class="div-especial">
+                <div>
+                    <p><strong>Diodo LED:</strong> LEDs emitem luz quando a corrente flui através deles. São usados para indicar status em circuitos.</p>
+                    <img src="led.png" alt="imagem de um Led">
+                </div>
+                <div>
+                    <p><strong>Display de Sete Segmentos:</strong> Compostos por sete LEDs organizados para exibir números e algumas letras.</p>
+                    <img src="display7Segmentos.png" alt="Imagem de um Display de 7 segmentos">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="tinkercad">
+            <h2>Tinkercad - Projeto Exemplo</h2>
+            <p>O Tinkercad é uma ferramenta de simulação que permite projetar circuitos e programar Arduino virtualmente.</p>
+                <img src="tinkercad.png" alt="Simulação de circuito no tinkercad" class="imagem-grande">
+            <p><strong>Exemplo do Projeto:</strong> Esse circuito faz simulação de um potênciometro que quando passa de 859 o led Vermelho acende.</p>
+        </section>
+
+        <hr>
+        
+        <section id="placa-arduino">
+            <h2>Placa Arduino</h2>
+            <p>O Arduino é uma plataforma de prototipagem baseada em hardware e software livre, permitindo criar uma variedade de projetos de automação e controle.</p>
+            <img src="arduino.png" alt="placa de arduino UNO">
+        </section>
+
+        <hr>
+
+        <section id="programa-ide">
+            <h2>Programa na IDE Arduino</h2>
+            <p>A IDE Arduino permite escrever, compilar e carregar código para a placa. Exemplo de código:</p>
+            <article>
+                <code>
+                    // C++ code<br>
+                    //<br>
+                    int sensor = 0;<br>
+                    <br>
+                    void setup() {<br>
+                    pinMode(A0, INPUT);<br>
+                    pinMode(8, OUTPUT);<br>
+                    }<br>
+                    <br>
+                    void loop() {<br>
+                    sensor = analogRead(A0); // Potênciometro.<br>
+                    if (sensor >= 859) {<br>
+                        digitalWrite(8, HIGH); // LED Liga.<br>
+                    } else {<br>
+                        digitalWrite(8, LOW); // LED Desliga.<br>
+                    }<br>
+                    delay(10); // Delay após execução do Código.<br>
+                    }<br>
+                </code>
+            </article>
+        </section>
+
+        <div class="div-especial">
+            <section id="entrada-analogica">
+                <h2>Entrada Analógica no Arduino</h2>
+                <p>Entradas analógicas permitem ler valores variáveis, como a tensão de um sensor. A leitura é feita usando
+                    a função <code>analogRead()</code> que retorna valores entre 0 e 1023.</p>
+            </section>
+    
+            <section id="entrada-digital">
+                <h2>Entrada Digital no Arduino</h2>
+                <p>Entradas digitais detectam se um sinal está em nível alto (HIGH) ou baixo (LOW), ideal para botões e
+                    chaves.</p>
+            </section>
+        </div>
+
+        <div class="div-especial">
+            <section id="saida-analogica">
+                <h2>Saída Analógica no Arduino (PWM)</h2>
+                <p>As saídas PWM permitem controlar intensidade de LEDs ou velocidade de motores usando
+                    <code>analogWrite()</code>, variando de 0 (0%) a 255 (100%).</p>
+            </section>
+    
+            <section id="saida-digital">
+                <h2>Saída Digital no Arduino</h2>
+                <p>Saídas digitais controlam o estado (ligado/desligado) de componentes. Um LED pode ser controlado com
+                    <code>digitalWrite(pin, HIGH)</code> e <code>digitalWrite(pin, LOW)</code>.</p>
+            </section>
+        </div>
+        <br><br>
+        <hr>
+
+        <section id="multimetro">
+            <h2>Multímetro - O que é e para que Serve</h2>
+            <p>O multímetro é um instrumento que mede tensão, corrente e resistência. Essencial para diagnósticos e testes de componentes em circuitos.</p>
+            <img src="multimetro.png" alt="Multimetro">
+        </section>
+
+        <section id="unidades-medida">
+            <h2>Unidades de Medida no Multímetro</h2>
+            <ul>
+                <li><strong>Voltagem (V):</strong> Medida da diferença de potencial entre dois pontos.</li>
+                <li><strong>Corrente (A):</strong> Quantidade de carga elétrica passando por um ponto em um segundo.
+                </li>
+                <li><strong>Resistência (Ω):</strong> Oposição ao fluxo de corrente.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; x.DelGuerso 2024. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
